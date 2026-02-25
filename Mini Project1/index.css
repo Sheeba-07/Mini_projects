@@ -1,4 +1,4 @@
-
+/* 
 *{
  padding: 0;
  margin:0;
@@ -118,6 +118,272 @@
 #check:checked ~ .btn_one i{
   opacity: 0;
 }
+ */
+
+ *{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+font-family:"Poppins",sans-serif;
+
+}
+
+
+/* Background */
+
+.main_box{
+
+height:100vh;
+
+background:
+
+linear-gradient(rgba(0,0,0,.6),
+rgba(0,0,0,.8)),
+
+url("photo.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
 
 
 
+/* MENU BUTTON */
+
+.btn_one i{
+
+position:absolute;
+
+top:20px;
+left:20px;
+
+font-size:30px;
+
+/* Premium Golden */
+
+color:#ffd166;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.btn_one i:hover{
+
+color:#ff9f1c;
+
+transform:scale(1.2);
+}
+
+
+
+/* SIDEBAR */
+
+.sidebar_menu{
+
+position:fixed;
+
+top:0;
+
+left:-320px;
+
+width:300px;
+
+height:100vh;
+
+/* Glass effect */
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+box-shadow:0 0 25px rgba(0,0,0,.5);
+
+transition:.4s ease;
+
+}
+
+
+
+/* LOGO */
+
+.logo{
+
+height:60px;
+
+display:flex;
+
+align-items:center;
+
+padding-left:20px;
+
+font-size:20px;
+
+font-weight:600;
+}
+
+.logo a{
+
+color:white;
+
+text-decoration:none;
+
+}
+
+
+
+/* CLOSE BUTTON */
+
+.btn_two{
+
+position:absolute;
+
+top:10px;
+right:15px;
+
+font-size:22px;
+
+cursor:pointer;
+}
+
+.btn_two i{
+
+color:#f1f1f1;
+
+transition:.3s;
+}
+
+.btn_two i:hover{
+
+color:#ff6b6b;
+
+transform:rotate(180deg);
+
+}
+
+
+
+/* MENU */
+
+.menu{
+
+margin-top:70px;
+
+}
+
+.menu li{
+
+list-style:none;
+
+padding:15px 25px;
+
+transition:.3s;
+
+}
+
+.menu li:hover{
+
+background:rgba(255,255,255,.15);
+
+border-left:4px solid #ffd166;
+
+padding-left:30px;
+
+}
+
+
+/* ICON COLOR */
+
+.menu i{
+
+margin-right:12px;
+
+/* Premium Blue */
+
+color:#00d4ff;
+
+transition:.3s;
+
+}
+
+.menu li:hover i{
+
+color:#ffd166;
+
+}
+
+
+
+.menu a{
+
+color:white;
+
+text-decoration:none;
+
+font-size:16px;
+
+}
+
+
+
+/* SOCIAL MEDIA */
+
+.social_media{
+
+position:absolute;
+
+bottom:25px;
+
+width:100%;
+
+text-align:center;
+
+}
+
+.social_media a{
+
+color:#eaeaea;
+
+margin:10px;
+
+font-size:20px;
+
+transition:.3s;
+
+}
+
+.social_media a:hover{
+
+color:#ffb703;
+
+transform:translateY(-5px) scale(1.2);
+
+}
+
+
+
+/* CHECKBOX */
+
+#check{
+
+display:none;
+
+}
+
+#check:checked ~ .sidebar_menu{
+
+left:0;
+
+}
+
+#check:checked ~ .btn_one{
+
+opacity:0;
+
+pointer-events:none;
+
+}
